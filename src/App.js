@@ -1,6 +1,6 @@
 import React from "react";
-import HelloBootstrap from "./components/HelloBootstrap";
+import Clicky from "./components/Clicky";
 
-const App = () => <HelloBootstrap />;
+const App = () => <Clicky />;
 
 export default App;
