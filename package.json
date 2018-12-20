@@ -1,8 +1,8 @@
 {
   "name": "clicky-game",
-  "homepage" : "http://myname.github.io/myapp",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://ayndecastro.github.io/clicky-game/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.6.3",
