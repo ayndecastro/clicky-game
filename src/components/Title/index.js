@@ -7,6 +7,7 @@ const Title = props => (
     <h2 className="scores container text-danger text-center">
       SCORE: {props.score} HIGHSCORE: {props.highscore}
     </h2>
+    <div class="text-danger text-center">Whatever you do, don't click the same car twice!</div>
   </div>
 );
 
