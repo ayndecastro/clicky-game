@@ -1,6 +1,10 @@
 .wrapper {
   padding-top: 50px;
-  background: #ECEFF1;
+  background-image: url("https://cdn.shopify.com/s/files/1/2223/5397/files/JDM_Logo1_800x.png?v=1516052298");
+  background-repeat: no-repeat;
+  background-color: rgb(87, 84, 84);
+  background-position: center;
+  background-size: 70%;
   height: 100%;
   display: flex;
   flex-flow: row wrap;
