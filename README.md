@@ -4,4 +4,4 @@
     whatever you do, don't click on an image twice!
 
 
-check the game out here[https://ayndecastro.github.io/clicky-game/]!
+check the game out [here](https://ayndecastro.github.io/clicky-game/)!
