@@ -1,6 +1,7 @@
 {
   "name": "clicky-game",
   "version": "0.1.0",
+  "homepage": "https://ayndecastro.github.io/clicky-game/",
   "private": true,
   "dependencies": {
     "react": "^16.6.3",
@@ -11,6 +12,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
