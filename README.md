@@ -5,3 +5,4 @@
 
 
 check the game out [here](https://ayndecastro.github.io/clicky-game/)!
+![View product table](./public/images/app.jpg)
