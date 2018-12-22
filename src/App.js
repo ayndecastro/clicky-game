@@ -12,12 +12,12 @@ class App extends Component {
     highscore: 0
   };
 
-  end = () => {
+  endgameHandler = () => {
     if (this.state.score > this.state.highscore) {
       this.setState({highscore: this.state.score}); //make state.highscore equal to the highest state.score
     }
     this.state.cars.forEach(car => {
-      car.count = 0; //start count at 0
+      car.clicked = false;
     });
     if(this.state.score === 12){ //if score 12 alert this
       alert(`Nice! You scored ${this.state.score}! that's the highscore!`);
@@ -28,18 +28,18 @@ class App extends Component {
     return true; 
   }
 
-  clickshuffle = id => {
+  clickshuffleHandler = id => {
     this.state.cars.find((carCard, i) => {
       if (carCard.id === id) {
-        if(cars[i].count === 0){
-          cars[i].count+= 1;
+        if(cars[i].clicked === false){
+          cars[i].clicked = true;
           this.setState({score : this.state.score + 1}, function(){ //keep updating score
             console.log(this.state.score); 
           });
           this.state.cars.sort(() => Math.random() - 0.5)
           return true; 
         } else {
-          this.end(); //call then end function
+          this.endgameHandler(); //call then end function
         }
       }
     });
@@ -51,7 +51,7 @@ class App extends Component {
         <Title score={this.state.score} highscore={this.state.highscore}>CLICKY GAME</Title>
         {this.state.cars.map(car => (
           <CarCard
-            click={this.clickshuffle}
+            click={this.clickshuffleHandler}
             id={car.id}
             key={car.id}
             image={car.image}
